@@ -8,23 +8,31 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="css/style.css" rel="stylesheet">
+  <link href="/Frontend/css/home.css" rel="stylesheet">
+  <link href="/Frontend/css/navbar.css" rel="stylesheet">
+  <link href="/Frontend/css/scroll_button.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="sticky">
+<body onload="move()">
+    <button onclick="topFunction()" id="scroll-button" title="Go to top">Top</button>
+    <script src="/Frontend/js/scroll_button.js"></script>
+    
+    <header id="navbar" class="sticky">
         <!--<div class="logo"></div>-->
-        <img class="logo" src="css/media/Stock_Golf_Logo.jpeg" alt="EMC Golf Tournament Logo">
+        <a href="/index.html">
+            <img id="logo" src="/media/photos/Golf_Logo2.png" alt="EMC Golf Tournament Logo">
+        </a>
         <nav> 
             <ul class="nav_links">
                 <li><a href="" class="underline">ABOUT</a></li>
-                <li><a href="" class="underline">MEDIA</a></li>
+                <li><a href="/Frontend/pages/media.html" class="underline">MEDIA</a></li>
                 <li><a href="" class="underline">SPONSORS</a></li>
                 <li><a href="" class="underline">SIGNUP</a></li>
             </ul>
         </nav>
         <!--<a class="button" href=""><button>Contact</button></a>-->
     </header>
+    <script src="/Frontend/js/navbar.js"></script>
     <div class="image-display">
         <div class="button-container-left">
             <div class="left-button"></div>            
@@ -33,7 +41,8 @@
             <div class="right-button"></div>            
         </div>
         
-        <div class="progress-bar"></div>
+        <div id="progress-bar"></div>
+        <script src="/Frontend/js/progress_bar.js"></script>
     </div>
     
     <div class="announcment">
@@ -60,7 +69,7 @@
     </div>
     <div class="message">
         <video controls> 
-            <source src="css/media/coreycutler.mp4" type="video/mp4">    
+            <source src="/media/videos/coreycutler.mp4" type="video/mp4">    
         </video>
         <p>
             Corey Cutler, MD, MPH, FRCP(C) is an Associate Professor of Medicine 
@@ -77,6 +86,22 @@
             hematology, medical oncology, and stem cell transplantation at the 
             Dana-Farber Cancer Institute. Dr. Cutler earned an MPH degree at the 
             Harvard School of Public Health.
+        </p>
+        <p>
+            Currently, Dr. Cutler is on the Board of Directors of the American 
+            Society of Blood and Marrow Transplantation serving as Treasurer, 
+            and is the Co-Chair of the Clinical Trials Working Group of the 
+            NIH Consensus Conference on Chronic GVHD. He recently completed 
+            terms as the Co-Chair of the CIBMTR GVHD Working Committee, and 
+            as a member of the Clinical Trials Advisory Committee of the CIBMTR. 
+            Dr. Cutler is on the editorial boards for the journals Biology of 
+            Blood and Marrow Transplantation, the Journal of Clinical Oncology 
+            and the American Journal of Hematology. He has been a contributing 
+            author on more than 200 peer-reviewed publications and 25 reviews 
+            and book chapters. His research focuses on development of novel 
+            methods of acute and chronic graft-vs.-host disease prophylaxis 
+            and therapy, umbilical cord blood transplantation, and decision 
+            theory in stem cell transplantation. 
         </p>
     </div>
 </body>

@@ -1,0 +1,70 @@
+/* NAV BAR */
+
+@media only screen and (max-width: 980px) {
+    
+}
+
+li, a, button {
+    font-family: "Monyserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20%;
+    background-color: rgb(41,20,69);
+    border-bottom: 3px solid grey;
+}
+
+#logo {
+    cursor: pointer;
+    width: 128px;
+    height: 128px;
+    /*background-image: url("media/Stock_Golf_Logo.jpeg");
+    background-color: rgba(41,20,69,1);
+    background-blend-mode: multiply;*/
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b2dd4c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
